@@ -29,3 +29,5 @@ func application(application: UIApplication, didFinishLaunchingWithOptions launc
  ```swift
  ```
  from : http://stackoverflow.com/questions/27047904/passing-data-through-view-controllers-with-swift-without-using-storyboard
+ 
+ http://stackoverflow.com/questions/31813942/swift-programmatically-navigate-to-viewcontroller-and-pass-data
