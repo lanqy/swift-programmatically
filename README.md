@@ -68,7 +68,8 @@ println(“off”)
 }
 ```
 from :http://www.apptuitions.com/programmatically-creating-uiview-uislider-uiswitch-using-swift/
- ##Passing Data through View Controllers with Swift without Using Storyboard
+
+##Passing Data through View Controllers with Swift without Using Storyboard
  
  ```swift
  class UberWebviewController : UIViewController {
@@ -132,3 +133,36 @@ dynamicTxtField.backgroundColor = UIColor.lightGrayColor()
 self.view.addSubview(dynamicTxtField)
 ```
 from:http://www.apptuitions.com/programmatically-creating-uibuttonuilabeluitextfield-using-swift/
+
+##Programmatically creating UIStepper and UISegmentedControl Using Swift
+
+###UIStepper
+```swift
+var customStepper = UIStepper (frame:CGRectMake(110, 250, 0, 0))
+customStepper.wraps = true
+customStepper.autorepeat = true
+customStepper.maximumValue = 10
+customStepper.addTarget(self, action: "stepperValueChanged:", forControlEvents: .ValueChanged)
+self.view.addSubview(customStepper)
+
+func stepperValueChanged(sender:UIStepper!)
+{
+println("It Works, Value is --&gt;\(Int(sender.value).description)")
+}
+```
+
+###UISegmentedControl
+```swift
+var customSegmentedControl = UISegmentedControl (items: ["one","two","three"])
+customSegmentedControl.frame = CGRectMake(60, 250,200, 30)
+customSegmentedControl.selectedSegmentIndex = 1
+customSegmentedControl.tintColor = UIColor.redColor()
+customSegmentedControl.addTarget(self, action: "segmentedValueChanged:", forControlEvents: .ValueChanged)
+self.view.addSubview(customSegmentedControl)
+
+func segmentedValueChanged(sender:UISegmentedControl!)
+{
+println("It Works, Value is --&gt;\(sender.selectedSegmentIndex)")
+}
+```
+from: http://www.apptuitions.com/programmatically-creating-uistepper-and-uisegmentedcontrol-using-swift/
