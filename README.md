@@ -253,3 +253,14 @@ class TwoViewController: UIViewController,UICollectionViewDataSource,UICollectio
 
 link: http://stackoverflow.com/questions/17856055/creating-a-uicollectionview-programmatically
       http://randexdev.com/2014/07/uicollectionview/
+
+###Creating a navigationController programatically (Swift)
+```swift
+self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+var nav1 = UINavigationController()
+var mainView = ViewController(nibName: nil, bundle: nil) //ViewController = Name of your controller
+nav1.viewControllers = [mainView]
+self.window!.rootViewController = nav1
+self.window?.makeKeyAndVisible()
+```
+link: http://stackoverflow.com/questions/28793331/creating-a-navigationcontroller-programatically-swift
