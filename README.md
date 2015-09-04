@@ -67,10 +67,68 @@ println(“off”)
 }
 }
 ```
-
+from :http://www.apptuitions.com/programmatically-creating-uiview-uislider-uiswitch-using-swift/
  ##Passing Data through View Controllers with Swift without Using Storyboard
+ 
  ```swift
+ class UberWebviewController : UIViewController {
+
+    var dataFromAPI : [Any]
+
+    init(data someData : [Any]) {
+        self.dataFromAPI = someData
+        super.init()
+    }
+
+    required init(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+}
+
+
+let viewController = UberWebviewController(data: whateverYourDataIs)
+self.navigationController?.presentViewController(viewController, animated: true, completion: nil)
+
  ```
  from : http://stackoverflow.com/questions/27047904/passing-data-through-view-controllers-with-swift-without-using-storyboard
  
  http://stackoverflow.com/questions/31813942/swift-programmatically-navigate-to-viewcontroller-and-pass-data
+
+
+##Programmatically creating UIButton,UILabel,UITextField Using Swift
+###UIButton
+```swift
+let dunamicButton = UIButton.buttonWithType(UIButtonType.System) as UIButton
+dunamicButton.backgroundColor = UIColor.greenColor()
+dunamicButton.setTitle("Button", forState: UIControlState.Normal)
+dunamicButton.frame = CGRectMake(100, 100, 100, 50)
+dunamicButton.addTarget(self, action: "buttonTouched:", forControlEvents: UIControlEvents.TouchUpInside)
+self.view.addSubview(dunamicButton)
+
+func buttonTouched(sender:UIButton!)
+{
+println("It Works!!!")
+}
+```
+###UILabel
+
+```swift
+var dynamicLabel: UILabel = UILabel()
+dynamicLabel.frame = CGRectMake(50, 150, 200, 21)
+dynamicLabel.backgroundColor = UIColor.orangeColor()
+dynamicLabel.textColor = UIColor.blackColor()
+dynamicLabel.textAlignment = NSTextAlignment.Center
+dynamicLabel.text = "test label"
+self.view.addSubview(dynamicLabel)
+```
+
+###UITextField
+
+```swift
+var dynamicTxtField: UITextField = UITextField()
+dynamicTxtField.frame = CGRectMake(50, 70, 200, 30)
+dynamicTxtField.backgroundColor = UIColor.lightGrayColor()
+self.view.addSubview(dynamicTxtField)
+```
+from:http://www.apptuitions.com/programmatically-creating-uibuttonuilabeluitextfield-using-swift/
