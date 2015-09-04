@@ -177,5 +177,22 @@ imageViewObject = UIImageView(frame:CGRectMake(0, 0, 100, 100));
 imageViewObject.image = UIImage(named:"imageName.png")
 self.view.addSubview(imageViewObject)
 
-imageViewObject.contentMode = UIViewContentMode.ScaleToFill //imageViewObject.contentMode = UIViewContentMode.ScaleAspectFit || imageViewObject.contentMode = UIViewContentMode.ScaleAspectFill
+imageViewObject.contentMode = UIViewContentMode.ScaleToFill 
+//imageViewObject.contentMode = UIViewContentMode.ScaleAspectFit 
+//imageViewObject.contentMode = UIViewContentMode.ScaleAspectFill
 ```
+###Adding UITextField on UIView Programmatically Swift
+
+```swift
+var textFiled = UITextField(frame: CGRectMake(20.0, 30.0, 100.0, 33.0))
+        textFiled.backgroundColor = UIColor.redColor()
+        textFiled.borderStyle = UITextBorderStyle.Line
+        self.view.addSubview(textFiled)
+```
+link: http://stackoverflow.com/questions/24710041/adding-uitextfield-on-uiview-programmatically-swift
+
+##How do I create a new Swift project without using Storyboards?
+```swift
+
+```
+link: http://stackoverflow.com/questions/24046898/how-do-i-create-a-new-swift-project-without-using-storyboards
