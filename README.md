@@ -23,8 +23,51 @@ func application(application: UIApplication, didFinishLaunchingWithOptions launc
         return true
     }
 ```
- ##Programmatically creating UIView, UISlider, UISwitch Using Swift
- 
+##Programmatically creating UIView, UISlider, UISwitch Using Swift
+
+###UIView
+```swift
+var DynamicView=UIView(frame: CGRectMake(100, 200, 100, 100))
+DynamicView.backgroundColor=UIColor.greenColor()
+DynamicView.layer.cornerRadius=25
+DynamicView.layer.borderWidth=2
+self.view.addSubview(DynamicView)
+```
+###UISlider
+```swift
+var sliderDemo = UISlider(frame:CGRectMake(20, 260, 280, 20))
+sliderDemo.minimumValue = 0
+sliderDemo.maximumValue = 100
+sliderDemo.continuous = true
+sliderDemo.tintColor = UIColor.redColor()
+sliderDemo.value = 50
+sliderDemo.addTarget(self, action: "sliderValueDidChange:", forControlEvents: .ValueChanged)
+self.view.addSubview(sliderDemo)
+
+func sliderValueDidChange(sender:UISlider!)
+{
+println("value--\(sender.value)")
+}
+```
+###UISwitch
+```swift
+var switchDemo=UISwitch(frame:CGRectMake(150, 300, 0, 0));
+switchDemo.on = true
+switchDemo.setOn(true, animated: false);
+switchDemo.addTarget(self, action: "switchValueDidChange:", forControlEvents: .ValueChanged);
+self.view.addSubview(switchDemo);
+
+func switchValueDidChange(sender:UISwitch!)
+{
+if (sender.on == true){
+println(“on”)
+}
+else{
+println(“off”)
+}
+}
+```
+
  ##Passing Data through View Controllers with Swift without Using Storyboard
  ```swift
  ```
