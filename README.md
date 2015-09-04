@@ -22,4 +22,5 @@ func application(application: UIApplication, didFinishLaunchingWithOptions launc
         
         return true
     }
-  
+swift```
+ ##Programmatically creating UIView, UISlider, UISwitch Using Swift
