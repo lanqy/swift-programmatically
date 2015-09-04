@@ -112,6 +112,8 @@ func buttonTouched(sender:UIButton!)
 println("It Works!!!")
 }
 ```
+link: http://stackoverflow.com/questions/24030348/how-to-create-a-button-programmatically
+
 ###UILabel
 
 ```swift
