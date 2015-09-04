@@ -192,7 +192,13 @@ var textFiled = UITextField(frame: CGRectMake(20.0, 30.0, 100.0, 33.0))
 link: http://stackoverflow.com/questions/24710041/adding-uitextfield-on-uiview-programmatically-swift
 
 ##How do I create a new Swift project without using Storyboards?
-```swift
 
-```
 link: http://stackoverflow.com/questions/24046898/how-do-i-create-a-new-swift-project-without-using-storyboards
+
+
+###Adding UISearchBar Programmatically to UITableView
+link: http://stackoverflow.com/questions/6947858/adding-uisearchbar-programmatically-to-uitableview
+
+###create scrollview programmatically in swift without outlet
+
+link :http://stackoverflow.com/questions/28156911/create-scrollview-programmatically-in-swift-without-outlet
