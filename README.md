@@ -24,3 +24,8 @@ func application(application: UIApplication, didFinishLaunchingWithOptions launc
     }
 ```
  ##Programmatically creating UIView, UISlider, UISwitch Using Swift
+ 
+ ##Passing Data through View Controllers with Swift without Using Storyboard
+ ```swift
+ ```
+ from : http://stackoverflow.com/questions/27047904/passing-data-through-view-controllers-with-swift-without-using-storyboard
