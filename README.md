@@ -113,6 +113,7 @@ println("It Works!!!")
 }
 ```
 link: http://stackoverflow.com/questions/24030348/how-to-create-a-button-programmatically
+http://stackoverflow.com/questions/24102191/make-a-uibutton-programatically-in-swift
 
 ###UILabel
 
@@ -168,3 +169,13 @@ println("It Works, Value is --&gt;\(sender.selectedSegmentIndex)")
 }
 ```
 from: http://www.apptuitions.com/programmatically-creating-uistepper-and-uisegmentedcontrol-using-swift/
+
+###UIImageview Programmatically in swift
+```swift
+var imageViewObject :UIImageView
+imageViewObject = UIImageView(frame:CGRectMake(0, 0, 100, 100));
+imageViewObject.image = UIImage(named:"imageName.png")
+self.view.addSubview(imageViewObject)
+
+imageViewObject.contentMode = UIViewContentMode.ScaleToFill //imageViewObject.contentMode = UIViewContentMode.ScaleAspectFit || imageViewObject.contentMode = UIViewContentMode.ScaleAspectFill
+```
