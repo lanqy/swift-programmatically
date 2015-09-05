@@ -420,3 +420,6 @@ link: http://codewithchris.com/learn-swift-from-objective-c-part3/
 
 ###delegate in swift language
 link: http://stackoverflow.com/questions/24059195/delegate-in-swift-language
+
+###CREATE CUSTOM DELEGATE AND PROTOCOL IOS | SWIFT & OBJECTIVE-C
+link: http://sledgedev.com/create-custom-delegate-and-protocol-ios-swift-objective-c/
