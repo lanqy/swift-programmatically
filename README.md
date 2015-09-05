@@ -304,3 +304,12 @@ link: http://stackoverflow.com/questions/28793331/creating-a-navigationcontrolle
     }
 ```
 link: https://coderwall.com/p/6onn0g/adding-progress-icon-programmatically-to-a-new-uiview
+
+###UITextView
+```swift
+var textview = UITextView(frame:CGRectMake(10,100,200,100))
+textview.layer.borderWidth = 1
+textview.layer.borderColor = UIColor.grayColor().CGColor
+self.view.addSubview(textview)
+//textview.editable = false 
+```
