@@ -333,3 +333,51 @@ link:http://stackoverflow.com/questions/30421206/how-to-set-size-uiview-in-auto-
 
 ####Display iPad and landscape views using Swift Autolayout and Size Classes Programmatically
 link: http://www.digistarters.com/swift-autolayout-and-size-classes-programmatically/
+
+###UIAlertView
+```swift
+import UIKit
+class ViewController:UIViewController{
+        override func viewDidLoad(){
+                super.viewDidLoad()
+                var alertView = UIAlertView()
+                alertView.title = "messageTitle"
+                alertView.message = "are you true to delete this item?"
+                alertView.addButtonWithTitle("Cannel")
+                alertView.addButtonWithTitle("Ok")
+                alertView.cannelButtonIndex = 0
+                alertView.delegate = self
+                alertView.show()
+        }
+        
+        func alertView(alertView:UIAlertView,clickedButtonAtIndex buttonIndex:Int){
+                if(buttonIndex==alertView.cannelButtonIndex){
+                        printIn("you clicked cannel button")
+                }else{
+                        printInt("you clicked Ok button")
+                }
+        }
+}
+```
+###UIActionSheet
+```swift
+import UIKit
+
+class ViewController:UIViewController,UIActionSheetDelegate{
+        override func viewDidLoad(){
+                super.viewDidLoad()
+                var actionSheet = UIActionSheet()
+                // actionSheet.title = "the title"
+                actionSheet.addButtonWithTitle("cannel")
+                actionSheet.addButtonWithTitle("action 1")
+                actionSheet.addButtonWithTitle("action 2")
+                actionSheet.cannelButtonIndex = 0
+                actionSheet.delegate = self
+                actionSheet.showInView(self.view)
+        }
+        
+        func actionsheet(actionSheet:UIActionSheet!,clickedButtonAtIndex buttonIndex:Int){
+                printInt("you clicked:"+actionSheet.buttonTitleAtIndex(buttonIndex))
+        }
+}
+```
