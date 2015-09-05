@@ -393,14 +393,12 @@ override func viewDidLoad(){
         self.view.addSubview(scrollView)
         
         // zoom
-        
         scrollView.minimumZoomScale = 0.1
         scrollView.maximunZoomScale = 3
         scrollView.delegate = self
 }
 
 //UIscrollViewDelegate
-
 func viewForZoomingInScrollView(scrollView:UIScrollView!) -> UIView!{
         for subview:AnyObject in scrollView.subviews{
                 if subview.isKindOfClass(UIImageView){
