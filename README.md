@@ -323,3 +323,13 @@ progressView.setProgress(0.8,animated:true)
 progressView.progressTintColor = UIColor.greenColor()
 progressView.trackTintColor = UIColor.blueColor()
 ```
+###Swift auto layout programmatically and dynamic
+
+####Swift auto layout programmatically and dynamic
+link: http://stackoverflow.com/questions/29758455/swift-auto-layout-programmatically-and-dynamic
+
+####how to set size UIView in auto layout programmatically swift?
+link:http://stackoverflow.com/questions/30421206/how-to-set-size-uiview-in-auto-layout-programmatically-swift
+
+####Display iPad and landscape views using Swift Autolayout and Size Classes Programmatically
+link: http://www.digistarters.com/swift-autolayout-and-size-classes-programmatically/
