@@ -264,6 +264,7 @@ self.window!.rootViewController = nav1
 self.window?.makeKeyAndVisible()
 ```
 link:
+
 http://stackoverflow.com/questions/28793331/creating-a-navigationcontroller-programatically-swift
 http://stackoverflow.com/questions/22981610/programatically-creating-uinavigationcontroller-in-ios
 ###Adding progress icon programmatically to a new UIView
@@ -416,3 +417,6 @@ link: http://stackoverflow.com/questions/24099230/delegates-in-swift
 
 ###Learn Swift from Objective-C : Protocols and Delegation
 link: http://codewithchris.com/learn-swift-from-objective-c-part3/
+
+###delegate in swift language
+link: http://stackoverflow.com/questions/24059195/delegate-in-swift-language
