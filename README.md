@@ -323,7 +323,7 @@ progressView.setProgress(0.8,animated:true)
 progressView.progressTintColor = UIColor.greenColor()
 progressView.trackTintColor = UIColor.blueColor()
 ```
-###Swift auto layout programmatically and dynamic
+#Swift auto layout programmatically and dynamic
 
 ####Swift auto layout programmatically and dynamic
 link: http://stackoverflow.com/questions/29758455/swift-auto-layout-programmatically-and-dynamic
