@@ -422,6 +422,13 @@ var webview=UIWebView(frame:CGRectMake(20, 240, 280, 310));
         self.view.addSubview(webview);
 ```
 
+###UIDatePicker
+```swift
+ var datepick=UIDatePicker(frame:CGRectMake(20, 80, 280, 100));
+        datepick.datePickerMode = UIDatePickerMode.Date;
+        self.view.addSubview(datepick);
+```
+
 ###Delegates in swift
 link: http://stackoverflow.com/questions/24099230/delegates-in-swift
 
