@@ -333,7 +333,8 @@ link: http://stackoverflow.com/questions/29758455/swift-auto-layout-programmatic
 
 ####how to set size UIView in auto layout programmatically swift?
 link:http://stackoverflow.com/questions/30421206/how-to-set-size-uiview-in-auto-layout-programmatically-swift
-
+####SWIFT | Adding constraints programmatically
+link: http://stackoverflow.com/questions/26180822/swift-adding-constraints-programmatically
 ####Display iPad and landscape views using Swift Autolayout and Size Classes Programmatically
 link: http://www.digistarters.com/swift-autolayout-and-size-classes-programmatically/
 
