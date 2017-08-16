@@ -199,7 +199,7 @@ link: http://stackoverflow.com/questions/24046898/how-do-i-create-a-new-swift-pr
 ### Adding UISearchBar Programmatically to UITableView
 link: http://stackoverflow.com/questions/6947858/adding-uisearchbar-programmatically-to-uitableview
 
-###create scrollview programmatically in swift without outlet
+### create scrollview programmatically in swift without outlet
 
 link :http://stackoverflow.com/questions/28156911/create-scrollview-programmatically-in-swift-without-outlet
 
@@ -326,14 +326,14 @@ progressView.setProgress(0.8,animated:true)
 progressView.progressTintColor = UIColor.greenColor()
 progressView.trackTintColor = UIColor.blueColor()
 ```
-# Swift auto layout programmatically and dynamic
+## Swift auto layout programmatically and dynamic
 
 #### Swift auto layout programmatically and dynamic
 link: http://stackoverflow.com/questions/29758455/swift-auto-layout-programmatically-and-dynamic
 
 #### how to set size UIView in auto layout programmatically swift?
 link:http://stackoverflow.com/questions/30421206/how-to-set-size-uiview-in-auto-layout-programmatically-swift
-####SWIFT | Adding constraints programmatically
+#### SWIFT | Adding constraints programmatically
 link: http://stackoverflow.com/questions/26180822/swift-adding-constraints-programmatically
 #### Display iPad and landscape views using Swift Autolayout and Size Classes Programmatically
 link: http://www.digistarters.com/swift-autolayout-and-size-classes-programmatically/
