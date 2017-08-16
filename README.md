@@ -1,6 +1,6 @@
 # swift-programmatically
 swift programmatically without storyboard
-##Add tabs programmatically in UITabBarController with swift
+## Add tabs programmatically in UITabBarController with swift
 ```swift
 func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: NSDictionary?) -> Bool {
         // Override point for customization after application launch.
@@ -23,9 +23,9 @@ func application(application: UIApplication, didFinishLaunchingWithOptions launc
         return true
     }
 ```
-##Programmatically creating UIView, UISlider, UISwitch Using Swift
+## Programmatically creating UIView, UISlider, UISwitch Using Swift
 
-###UIView
+### UIView
 ```swift
 var DynamicView=UIView(frame: CGRectMake(100, 200, 100, 100))
 DynamicView.backgroundColor=UIColor.greenColor()
@@ -33,7 +33,7 @@ DynamicView.layer.cornerRadius=25
 DynamicView.layer.borderWidth=2
 self.view.addSubview(DynamicView)
 ```
-###UISlider
+### UISlider
 ```swift
 var sliderDemo = UISlider(frame:CGRectMake(20, 260, 280, 20))
 sliderDemo.minimumValue = 0
@@ -49,7 +49,7 @@ func sliderValueDidChange(sender:UISlider!)
 println("value--\(sender.value)")
 }
 ```
-###UISwitch
+### UISwitch
 ```swift
 var switchDemo=UISwitch(frame:CGRectMake(150, 300, 0, 0));
 switchDemo.on = true
@@ -69,7 +69,7 @@ println(“off”)
 ```
 from :http://www.apptuitions.com/programmatically-creating-uiview-uislider-uiswitch-using-swift/
 
-##Passing Data through View Controllers with Swift without Using Storyboard
+## Passing Data through View Controllers with Swift without Using Storyboard
  
  ```swift
  class UberWebviewController : UIViewController {
@@ -97,8 +97,8 @@ self.navigationController?.presentViewController(viewController, animated: true,
  http://stackoverflow.com/questions/31813942/swift-programmatically-navigate-to-viewcontroller-and-pass-data
 
 
-##Programmatically creating UIButton,UILabel,UITextField Using Swift
-###UIButton
+## Programmatically creating UIButton,UILabel,UITextField Using Swift
+### UIButton
 ```swift
 let dunamicButton = UIButton.buttonWithType(UIButtonType.System) as UIButton
 dunamicButton.backgroundColor = UIColor.greenColor()
@@ -115,7 +115,7 @@ println("It Works!!!")
 link: http://stackoverflow.com/questions/24030348/how-to-create-a-button-programmatically
 http://stackoverflow.com/questions/24102191/make-a-uibutton-programatically-in-swift
 
-###UILabel
+### UILabel
 
 ```swift
 var dynamicLabel: UILabel = UILabel()
@@ -127,7 +127,7 @@ dynamicLabel.text = "test label"
 self.view.addSubview(dynamicLabel)
 ```
 
-###UITextField
+### UITextField
 
 ```swift
 var dynamicTxtField: UITextField = UITextField()
@@ -137,9 +137,9 @@ self.view.addSubview(dynamicTxtField)
 ```
 from:http://www.apptuitions.com/programmatically-creating-uibuttonuilabeluitextfield-using-swift/
 
-##Programmatically creating UIStepper and UISegmentedControl Using Swift
+## Programmatically creating UIStepper and UISegmentedControl Using Swift
 
-###UIStepper
+### UIStepper
 ```swift
 var customStepper = UIStepper (frame:CGRectMake(110, 250, 0, 0))
 customStepper.wraps = true
@@ -154,7 +154,7 @@ println("It Works, Value is --&gt;\(Int(sender.value).description)")
 }
 ```
 
-###UISegmentedControl
+### UISegmentedControl
 ```swift
 var customSegmentedControl = UISegmentedControl (items: ["one","two","three"])
 customSegmentedControl.frame = CGRectMake(60, 250,200, 30)
@@ -170,7 +170,7 @@ println("It Works, Value is --&gt;\(sender.selectedSegmentIndex)")
 ```
 from: http://www.apptuitions.com/programmatically-creating-uistepper-and-uisegmentedcontrol-using-swift/
 
-###UIImageview Programmatically in swift
+### UIImageview Programmatically in swift
 ```swift
 var imageViewObject :UIImageView
 imageViewObject = UIImageView(frame:CGRectMake(0, 0, 100, 100));
@@ -181,7 +181,7 @@ imageViewObject.contentMode = UIViewContentMode.ScaleToFill
 //imageViewObject.contentMode = UIViewContentMode.ScaleAspectFit 
 //imageViewObject.contentMode = UIViewContentMode.ScaleAspectFill
 ```
-###Adding UITextField on UIView Programmatically Swift
+### Adding UITextField on UIView Programmatically Swift
 
 ```swift
 var textFiled = UITextField(frame: CGRectMake(20.0, 30.0, 100.0, 33.0))
@@ -191,12 +191,12 @@ var textFiled = UITextField(frame: CGRectMake(20.0, 30.0, 100.0, 33.0))
 ```
 link: http://stackoverflow.com/questions/24710041/adding-uitextfield-on-uiview-programmatically-swift
 
-##How do I create a new Swift project without using Storyboards?
+## How do I create a new Swift project without using Storyboards?
 
 link: http://stackoverflow.com/questions/24046898/how-do-i-create-a-new-swift-project-without-using-storyboards
 
 
-###Adding UISearchBar Programmatically to UITableView
+### Adding UISearchBar Programmatically to UITableView
 link: http://stackoverflow.com/questions/6947858/adding-uisearchbar-programmatically-to-uitableview
 
 ###create scrollview programmatically in swift without outlet
@@ -204,7 +204,7 @@ link: http://stackoverflow.com/questions/6947858/adding-uisearchbar-programmatic
 link :http://stackoverflow.com/questions/28156911/create-scrollview-programmatically-in-swift-without-outlet
 
 
-##Creating a UICollectionView programmatically
+## Creating a UICollectionView programmatically
 ```swift
 class TwoViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UICollectionViewDelegate {
 
@@ -254,7 +254,7 @@ class TwoViewController: UIViewController,UICollectionViewDataSource,UICollectio
 link: http://stackoverflow.com/questions/17856055/creating-a-uicollectionview-programmatically
       http://randexdev.com/2014/07/uicollectionview/
 
-###Creating a navigationController programatically (Swift)
+### Creating a navigationController programatically (Swift)
 ```swift
 self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
 var nav1 = UINavigationController()
@@ -267,7 +267,7 @@ link:
 
 http://stackoverflow.com/questions/28793331/creating-a-navigationcontroller-programatically-swift
 http://stackoverflow.com/questions/22981610/programatically-creating-uinavigationcontroller-in-ios
-###Adding progress icon programmatically to a new UIView
+### Adding progress icon programmatically to a new UIView
 ```swift
  override func loadView() {
         super.loadView()
@@ -308,7 +308,7 @@ http://stackoverflow.com/questions/22981610/programatically-creating-uinavigatio
 ```
 link: https://coderwall.com/p/6onn0g/adding-progress-icon-programmatically-to-a-new-uiview
 
-###UITextView
+### UITextView
 ```swift
 var textview = UITextView(frame:CGRectMake(10,100,200,100))
 textview.layer.borderWidth = 1
@@ -316,7 +316,7 @@ textview.layer.borderColor = UIColor.grayColor().CGColor
 self.view.addSubview(textview)
 //textview.editable = false 
 ```
-###UIProgressView
+### UIProgressView
 ```swift
 var progressView = UIProgressView(progressViewStyle:UIProgressViewStyle.Default)
 progressView.center = self.view.center
@@ -326,19 +326,19 @@ progressView.setProgress(0.8,animated:true)
 progressView.progressTintColor = UIColor.greenColor()
 progressView.trackTintColor = UIColor.blueColor()
 ```
-#Swift auto layout programmatically and dynamic
+# Swift auto layout programmatically and dynamic
 
-####Swift auto layout programmatically and dynamic
+#### Swift auto layout programmatically and dynamic
 link: http://stackoverflow.com/questions/29758455/swift-auto-layout-programmatically-and-dynamic
 
-####how to set size UIView in auto layout programmatically swift?
+#### how to set size UIView in auto layout programmatically swift?
 link:http://stackoverflow.com/questions/30421206/how-to-set-size-uiview-in-auto-layout-programmatically-swift
 ####SWIFT | Adding constraints programmatically
 link: http://stackoverflow.com/questions/26180822/swift-adding-constraints-programmatically
-####Display iPad and landscape views using Swift Autolayout and Size Classes Programmatically
+#### Display iPad and landscape views using Swift Autolayout and Size Classes Programmatically
 link: http://www.digistarters.com/swift-autolayout-and-size-classes-programmatically/
 
-###UIAlertView
+### UIAlertView
 ```swift
 import UIKit
 class ViewController:UIViewController{
@@ -363,7 +363,7 @@ class ViewController:UIViewController{
         }
 }
 ```
-###UIActionSheet
+### UIActionSheet
 ```swift
 import UIKit
 
@@ -385,7 +385,7 @@ class ViewController:UIViewController,UIActionSheetDelegate{
         }
 }
 ```
-###UIScrollView
+### UIScrollView
 ```swift
 override func viewDidLoad(){
         super.viewDidLoad()
@@ -413,7 +413,7 @@ func viewForZoomingInScrollView(scrollView:UIScrollView!) -> UIView!{
 }
 
 ```
-###UIWebView
+### UIWebView
 ```swift
 var webview=UIWebView(frame:CGRectMake(20, 240, 280, 310));
         var url = NSURL(string: "http://www.google.com");
@@ -423,21 +423,21 @@ var webview=UIWebView(frame:CGRectMake(20, 240, 280, 310));
         self.view.addSubview(webview);
 ```
 
-###UIDatePicker
+### UIDatePicker
 ```swift
  var datepick=UIDatePicker(frame:CGRectMake(20, 80, 280, 100));
         datepick.datePickerMode = UIDatePickerMode.Date;
         self.view.addSubview(datepick);
 ```
 
-###Delegates in swift
+### Delegates in swift
 link: http://stackoverflow.com/questions/24099230/delegates-in-swift
 
-###Learn Swift from Objective-C : Protocols and Delegation
+### Learn Swift from Objective-C : Protocols and Delegation
 link: http://codewithchris.com/learn-swift-from-objective-c-part3/
 
-###delegate in swift language
+### delegate in swift language
 link: http://stackoverflow.com/questions/24059195/delegate-in-swift-language
 
-###CREATE CUSTOM DELEGATE AND PROTOCOL IOS | SWIFT & OBJECTIVE-C
+### CREATE CUSTOM DELEGATE AND PROTOCOL IOS | SWIFT & OBJECTIVE-C
 link: http://sledgedev.com/create-custom-delegate-and-protocol-ios-swift-objective-c/
