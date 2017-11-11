@@ -72,19 +72,19 @@ from :http://www.apptuitions.com/programmatically-creating-uiview-uislider-uiswi
 ## Passing Data through View Controllers with Swift without Using Storyboard
  
  ```swift
- class UberWebviewController : UIViewController {
-
+class UberWebviewController : UIViewController {
+    
     var dataFromAPI : [Any]
-
+    
     init(data someData : [Any]) {
         self.dataFromAPI = someData
-        super.init()
+        super.init(nibName: nil, bundle: nil)
     }
-
+    
     required init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
+    
 }
 
 
